@@ -62,7 +62,7 @@ class C_Berita extends CI_Controller {
 			$this->form_validation->set_rules('kategori', 'kategori');
 			$this->form_validation->set_rules('tanggal', 'tanggal');
 			$this->form_validation->set_rules('jam', 'jam');
-            		$this->form_validation->set_rules('file', 'file');
+         
 			if($this->form_validation->run() === FALSE) {
 			 	$this->load->view('backend/template_user/unit_kerja/view_berita');
 			} else {
@@ -73,7 +73,7 @@ class C_Berita extends CI_Controller {
                     'kategori' => $this->input->post('kategori'),
 					'tanggal' => $this->input->post('tanggal'),
 					'jam' => $this->input->post('jam'),
-                    'file' => $this->input->post('file')		
+                   		
 				);
 				$this->Berita_model->insert_berita($data);
 				$this->session->set_flashdata('berita', 'success_add');
@@ -115,8 +115,7 @@ class C_Berita extends CI_Controller {
                     'uraian' => $this->input->post('uraian'),
                     'kategori' => $this->input->post('kategori'),
 					'tanggal' => $this->input->post('tanggal'),
-					'jam' => $this->input->post('jam'),
-                    'file' => $this->input->post('file')
+					'jam' => $this->input->post('jam')
 					);
 		        $this->Berita_model->update_berita($id,$data);
 				$this->session->set_flashdata('berita', 'success_edit');

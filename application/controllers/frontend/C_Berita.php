@@ -12,16 +12,16 @@ class C_Berita extends CI_Controller {
 			$query['berita'] = $this->Berita_model->view_berita();
 			$this->load->view('frontend/berita/view_berita', $query);
 	}
-    public function view_disdikpora() {
-        $query['berita'] = $this->Berita_model->view_disdikpora();
+    public function view_kegiatandesa() {
+        $query['berita'] = $this->Berita_model->view_kegiatandesa();
+        $this->load->view('frontend/berita/view_berita', $query);
+    }
+    public function view_infokabupaten() {
+        $query['berita'] = $this->Berita_model->view_infokabupaten();
         $this->load->view('frontend/berita/view_berita', $query);
     }
     public function view_infonasional() {
         $query['berita'] = $this->Berita_model->view_infonasional();
-        $this->load->view('frontend/berita/view_berita', $query);
-    }
-    public function view_infobeasiswa() {
-        $query['berita'] = $this->Berita_model->view_infobeasiswa();
         $this->load->view('frontend/berita/view_berita', $query);
     }
     public function detailberita($id)

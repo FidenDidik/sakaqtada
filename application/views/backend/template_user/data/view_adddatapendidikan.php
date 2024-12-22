@@ -16,7 +16,6 @@
 							 echo form_open('backend/user/C_Datapendidikan/save_datapendidikan', $attrib); 
                         ?>
                        <div class="row">
-                          
                           <div class="col-md-6">
                         <div class="form-group">
                             <label for="nama_rt"><b>Nama RT</b></label>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Login | DISDIKPORA</title>
+	<title>Login | Sakaq Tada</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -30,10 +30,10 @@
 				<form id="formlogin" action="ceklogin.php" class="login100-form validate-form">
 					<span class="animated infinite pulse delay-5s login100-form-title p-b-26 ">
 						<!-- <img src="<?php echo $setting['logo']; ?>" style="max-height:50px" class="img-responsive" alt="Responsive image"> -->
-                        <center><img src="<?php echo base_url(); ?>images/logo.png" style="max-height:70px" class="img-responsive" alt="Responsive image"></center>
+                        <center><img src="<?php echo base_url(); ?>images/logokubar.png" style="max-height:70px" class="img-responsive" alt="Responsive image"></center>
                     </span>
 					<span class=" login100-form-title p-b-26 ">
-					DISDIKPORA
+					SAKAQ TADA
 						<!-- <?php echo $setting['sekolah']; ?> -->
 					</span>
 					<div class="animated flipInX delay-10s p-b-20">
@@ -69,7 +69,7 @@
                         </div> -->
                     
 						<p><small> <a href="<?php echo base_url(); ?>index.php/home/index" >
-                                Home || </a>  Support By : &copy; Disdikpora Kab. Tambrauw 2021</small></p>
+                        Beranda || </a>&copy;2024 - Pemerintah Kampung Sakaq Tada</small></p>
 						
 					</div>
 					</fieldset>

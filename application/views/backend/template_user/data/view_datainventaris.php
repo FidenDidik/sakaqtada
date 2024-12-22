@@ -38,7 +38,7 @@
                         <thead>
                             <tr>
                                 <th class="text-center">No</th>
-                                <th class="text-center">Asal Tanah</th>
+                                <th class="text-center">Asal Tanah/Nama Inventaris</th>
                                 <th class="text-center">Luas M<sup>2</sup></th>
                                 <th class="text-center">No Sertifikat</th>
                                 <th class="text-center">Peroleh Tahun</th>
@@ -54,17 +54,16 @@
                         <?php $no=1;  
                             foreach ($data->result() as $row) { ?>
                             <tr>
-                            <td><?php echo $no; ?></td>
+                            <td class="text-center"><?php echo $no; ?></td>
                             <td><?php echo $row->asal_tanah; ?></td>
-                            <td><?php echo $row->luas; ?></td>
-                            <td><?php echo $row->no_sertifikat; ?></td>
-                            <td><?php echo $row->peroleh_tahun; ?></td>
-                            <td><?php echo $row->peruntukan; ?></td>
-                            <td><?php echo $row->lokasi; ?></td>
-                            <td><?php echo $row->sumber_dari; ?></td>
-                            <td><?php echo $row->pelepasan; ?></td>
-                            <td><?php echo $row->keterangan; ?></td>
-                                  
+                            <td class="text-center"><?php echo $row->luas; ?></td>
+                            <td class="text-center"><?php echo $row->no_sertifikat; ?></td>
+                            <td class="text-center"><?php echo $row->peroleh_tahun; ?></td>
+                            <td class="text-center"><?php echo $row->peruntukan; ?></td>
+                            <td class="text-center"><?php echo $row->lokasi; ?></td>
+                            <td class="text-center"><?php echo $row->sumber_dari; ?></td>
+                            <td class="text-center"><?php echo $row->pelepasan; ?></td>
+                            <td class="text-center"><?php echo $row->keterangan; ?></td> 
                             <td class="text-center">
                             <a href="<?php echo base_url(); ?>index.php/backend/user/C_Datainventaris/edit_datainventaris/<?php echo $row->id_datainventaris;?>" class="btn waves-effect waves-light btn-primary btn-skew">Edit</a>
                                 &nbsp;

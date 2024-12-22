@@ -14,10 +14,18 @@ class Berita_model extends CI_Model
         $query = $this->db->get();
         return $query;
      }
-     function view_disdikpora(){
+     function view_kegiatandesa(){
         $this->db->select('*');
         $this->db->from('berita');
-        $this->db->where('kategori="Kegiatan Disdikpora"');
+        $this->db->where('kategori="Kegiatan Desa"');
+        $this->db->order_by('id_berita', 'DESC');
+        $query = $this->db->get();
+        return $query;
+     }
+     function view_infokabupaten(){
+        $this->db->select('*');
+        $this->db->from('berita');
+        $this->db->where('kategori="Info Kabupaten"');
         $this->db->order_by('id_berita', 'DESC');
         $query = $this->db->get();
         return $query;
@@ -26,14 +34,6 @@ class Berita_model extends CI_Model
         $this->db->select('*');
         $this->db->from('berita');
         $this->db->where('kategori="Info Nasional"');
-        $this->db->order_by('id_berita', 'DESC');
-        $query = $this->db->get();
-        return $query;
-     }
-     function view_infobeasiswa(){
-        $this->db->select('*');
-        $this->db->from('berita');
-        $this->db->where('kategori="Info Beasiswa"');
         $this->db->order_by('id_berita', 'DESC');
         $query = $this->db->get();
         return $query;

@@ -19,7 +19,7 @@
                         </div>
                         <div class="entry-content">
                             <div class="cmt-box-desc-text">
-                           <h3>Daftar Sekolah Kabuptan Tambrauw</h3>
+                           <h3>Daftar Inventaris Kampung</h3>
                            <br>
                              <!-- Hover table card start -->               
                              <div class="card-block table-border-style">
@@ -27,20 +27,34 @@
                             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="100%">
                                         <thead>
                                             <tr>
-                                                <th class="text-center">NO</th>
-                                                <th class="text-center">NAMA SEKOLAH</th>
-                                                <th class="text-center">JENJANG</th>
-                                                <th class="text-center">KECMATAN</th> 
+                                            <th class="text-center">No</th>
+                                            <th class="text-center">Asal Tanah/Nama Inventaris</th>
+                                            <th class="text-center">Luas M<sup>2</sup></th>
+                                            <th class="text-center">No Sertifikat</th>
+                                            <th class="text-center">Peroleh Tahun</th>
+                                            <th class="text-center">Peruntukan</th>
+                                            <th class="text-center">Lokasi</th>
+                                            <th class="text-center">Sumber Dari</th>
+                                            <th class="text-center">Pelepasan Hak Atas Nama</th>
+                                            <th class="text-center">Keterangan</th>
+                                  
                                             </tr>
                                         </thead>
                                         <tbody>
                                         <?php $no=1;  
                                            foreach ($data->result() as $row) { ?>
                                             <tr>
-                                            <td><?php echo $no; ?></td>
-                                            <td><?php echo $row->nama_sekolah; ?></td>
-                                            <td><?php echo $row->jenjang; ?></td>
-                                            <td><?php echo $row->kecamatan; ?></td>
+                                            <td class="text-center"><?php echo $no; ?></td>
+                                            <td><?php echo $row->asal_tanah; ?></td>
+                                            <td class="text-center"><?php echo $row->luas; ?></td>
+                                            <td class="text-center"><?php echo $row->no_sertifikat; ?></td>
+                                            <td class="text-center"><?php echo $row->peroleh_tahun; ?></td>
+                                            <td class="text-center"><?php echo $row->peruntukan; ?></td>
+                                            <td class="text-center"><?php echo $row->lokasi; ?></td>
+                                            <td class="text-center"><?php echo $row->sumber_dari; ?></td>
+                                            <td class="text-center"><?php echo $row->pelepasan; ?></td>
+                                            <td class="text-center"><?php echo $row->keterangan; ?></td> 
+                                            <td class="text-center">
                                             </tr>
                                             <?php 
                                               $no++;
@@ -57,7 +71,7 @@
             </div>   
         </div>  
      </div>   
-    </div><!-- row end -->
+</div><!-- row end -->
 </div>
 </div>
  <?php $this->load->view('frontend/footer.php'); ?>

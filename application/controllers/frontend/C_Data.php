@@ -11,9 +11,9 @@ class C_Data extends CI_Controller {
 			$query['data'] = $this->Data_model->view_datapendidikan();
 			$this->load->view('frontend/data/view_datapendidikan', $query);
 	}
-    public function view_dataguru() {
-        $query['data'] = $this->Data_model->view_dataguru();
-        $this->load->view('frontend/data/view_dataguru', $query);
+    public function view_datainventaris() {
+        $query['data'] = $this->Data_model->view_datainventaris();
+        $this->load->view('frontend/data/view_datainventaris', $query);
 }
 	public function detail() {
 		

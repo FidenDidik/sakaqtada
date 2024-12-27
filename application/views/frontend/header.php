@@ -151,7 +151,7 @@
                             <a class="mega-menu-link" href="">Data Desa</a>
                             <ul class="mega-submenu">
                             <li><a href="<?php echo base_url(); ?>index.php/frontend/C_Data/view_datapendidikan">Data Pendidikan Desa</a></li>
-                             <li><a href="<?php echo base_url(); ?>index.php/frontend/C_Data/view_dataguru">Daftar Iventaris Desa</a></li>
+                             <li><a href="<?php echo base_url(); ?>index.php/frontend/C_Data/view_datainventaris">Daftar Iventaris Desa</a></li>
                             </ul>
                         </li>
                         </ul> 

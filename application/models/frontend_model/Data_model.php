@@ -15,10 +15,10 @@ class Data_model extends CI_Model
         $query = $this->db->get();
         return $query;
     }
-    public function view_dataguru(){
+    public function view_datainventaris(){
         $this->db->select('*');
-        $this->db->from('dataguru');
-        $this->db->order_by('id_dataguru', 'DESC');
+        $this->db->from('datainventaris');
+        $this->db->order_by('id_datainventaris', 'DESC');
         $query = $this->db->get();
         return $query;
     }
